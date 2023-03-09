@@ -32,5 +32,12 @@
     }
   },
 
-  "default_locale": "en"
+  "default_locale": "en",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "FocuScroll@bootleq",
+      "strict_min_version": "109.0"
+    }
+  }
 }
