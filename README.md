@@ -14,7 +14,7 @@ Detail
   to find something scrollable.
 
 - Has some quirk operations for iframe and so on, various situations were
-  demonstrated by test cases.
+  demonstrated by test cases (in [public](public/) folder).
 
 - Some debug messages will be printed to JS console when trigger the action.
 
@@ -24,7 +24,7 @@ Development
 
 ### Test server
 
-Test server is used to host test pages.
+Test server is used to host [test pages](public/).
 
 Start server with:
 
