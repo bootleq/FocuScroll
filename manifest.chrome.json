@@ -1,0 +1,35 @@
+{
+  "name": "FocuScroll",
+  "description": "__MSG_extDescription__",
+  "version": "0.0.1",
+  "icons": {
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "manifest_version": 3,
+
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "action": {
+    "browser_style": true,
+    "default_icon": {
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "description": "__MSG_actionDescription__"
+    }
+  },
+
+  "default_locale": "en"
+}

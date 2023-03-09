@@ -1,0 +1,14 @@
+.env
+*.zsh
+*.lnk
+Thumbs.db
+Desktop.ini
+build
+dist
+node_modules
+.eslintcache
+stats.json
+.tool-versions
+/test-results/
+/playwright-report/
+/playwright/.cache/

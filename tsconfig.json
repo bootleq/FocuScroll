@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+
+    // "strict": true,
+    // "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": ["src/**/*.tsx", "tests/**/*"],
+  "exclude": ["node_modules"],
+}

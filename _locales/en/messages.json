@@ -1,0 +1,9 @@
+{
+  "extDescription": {
+    "message": "Focus the main scrollable area"
+  },
+
+  "actionDescription": {
+    "message": "Focus main content"
+  }
+}

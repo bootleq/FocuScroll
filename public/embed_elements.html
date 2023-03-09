@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get out from embedded elements</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="options.css">
+
+    <style>
+      :root {
+        background-color: darkgray;
+        font-size: 20px;
+        text-align: center;
+      }
+      body {
+        width: 800px;
+        background-color: white;
+        margin: 0 auto;
+      }
+      h1 {
+        margin: 0
+      }
+      video {
+        display: block;
+        margin: auto;
+      }
+      ol {
+        list-style-position: inside;
+        padding: 0 2em 1em;
+      }
+      li {
+        min-height: 10em;
+        outline: 3px solid gold;
+        margin: 2em 0;
+        padding: 1em;
+      }
+      li::marker {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Get out from embedded elements</h1>
+
+    <ol>
+      <li>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qjWxXZ" data-user="chriscoyier" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/chriscoyier/pen/qjWxXZ">
+              Rainbow Border Button</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+        <p>
+          Try trap focus within above CodePen.
+          <br>
+          In Firefox just clcik the big button.
+          <br>
+          In Chrome you might need to open SCSS panel and click inside.
+        </p>
+
+        <hr>
+
+        <p>
+          Not merely <code>&lt;iframe&gt;</code> element, this also demos the not-same-origin situation.
+        </p>
+
+        <small>
+          Sample taken from Chris Coyier's <a href='https://codepen.io/chriscoyier/pen/qjWxXZ'>codepen.io/chriscoyier/pen/qjWxXZ</a>
+        </small>
+      </li>
+
+      <li>
+        <video data-testid='video' controls width="400">
+          <source src="assets/rain-falling-outdoors-3816406.mp4" type="video/mp4" />
+            Unable to play video, thus unable to test
+        </video>
+
+        <p>
+          Click the video volume control, focus will be trapped so you can no longer use <kbd>PageDown</kbd> to scroll.
+        </p>
+
+        <small>
+          Demo video taken from Jyoti Pur's <a href='https://www.pexels.com/video/rain-falling-outdoors-3816406/'>www.pexels.com/video/rain-falling-outdoors-3816406</a>.
+        </small>
+      </li>
+      <li>Block</li>
+      <li>Block</li>
+      <li>Block</li>
+      <li>Block</li>
+      <li>Block</li>
+    </ol>
+  </body>
+</html>
