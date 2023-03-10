@@ -23,7 +23,7 @@ module.exports = {
   root: true,
   overrides: [
     {
-      files: ['.eslintrc.js', '*.config.js'],
+      files: ['.eslintrc.js', '*.config.js', 'gen_bookmarklet.js'],
       env: {
         node: true
       },

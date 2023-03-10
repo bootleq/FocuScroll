@@ -61,3 +61,11 @@ Package a zip file:
 
     yarn build:prod
     yarn build:prod:chrome
+
+
+Bookmarklet
+-----------
+
+Can also generate bookmarklet by running `./gen_bookmarklet.js`.
+
+
