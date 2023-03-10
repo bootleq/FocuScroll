@@ -5,6 +5,13 @@ Provide a browser action to find the main scrollable area,
 focus it to enable page scrolling with keyboard (PageDown, PageUp, .etc).
 
 
+Install
+-------
+
+- Firefox Add-ons - [addons.mozilla.org/firefox/addon/delocalizer](https://addons.mozilla.org/firefox/addon/focuscroll/)
+- Chrome Web Store - [chrome.google.com/webstore/detail/delocalizer](https://chrome.google.com/webstore/detail/focuscroll/jebflmhcpmdcelkmjkklapnebmafeelm)
+
+
 Detail
 ------
 
