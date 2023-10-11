@@ -12,6 +12,15 @@ test('Frames, like javadoc', async ({ page }) => {
   await expect(page.locator('iframe.rightIframe')).toBeFocused();
 });
 
+test.only('One frame, like blogger post preview', async ({ page }) => {
+  await page.goto('./fullwidth_iframe.html'); // public/fullwith_iframe.html
+
+  await expect(page.locator('body')).toBeFocused();
+  await page.evaluate(stringifiedFocus);
+
+  await expect(page.locator('iframe.mainIframe')).toBeFocused();
+});
+
 test.describe('Embed elements', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('./embed_elements.html'); // public/embed_elements.html
