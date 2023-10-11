@@ -1,7 +1,7 @@
 {
   "name": "FocuScroll",
   "description": "__MSG_extDescription__",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "icons": {
     "48": "icons/48.png",
     "128": "icons/128.png"
@@ -19,7 +19,6 @@
   },
 
   "action": {
-    "browser_style": true,
     "default_icon": {
       "48": "icons/48.png",
       "128": "icons/128.png"
