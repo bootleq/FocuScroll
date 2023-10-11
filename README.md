@@ -62,7 +62,7 @@ Lint
 Unit tests
 
     yarn test
-    yarn test --watch
+    yarn test --debug --project firefox
 
 Package a zip file:
 
