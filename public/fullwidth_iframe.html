@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Full-width main frame like blogger post preview</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description=" content="FocuScroll testing for pages with a wide frame, like https://www.blogger.com/blog/post/edit/preview/*/*">
+  <style>
+    body {
+      background-color:#ffffff;
+      color:#353833;
+      font-family:'DejaVu Sans', Arial, Helvetica, sans-serif;
+      font-size:14px;
+      margin:0;
+      padding:0;
+      height:100%;
+      width:100%;
+    }
+    .fixedBar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1em;
+      line-height: 1.6;
+      background-color: gold;
+      opacity: 0.8;
+      outline: 2px solid red;
+    }
+    iframe {
+      margin:0;
+      padding:0;
+      height:100%;
+      width:100%;
+      overflow-y:scroll;
+      border:none;
+    }
+    .mainContainer {
+      margin:0 auto;
+      padding:0;
+      height:100%;
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+    }
+  </style>
+</head>
+<body>
+  <main role="main">
+    <div class="mainContainer">
+      <div class="fixedBar">
+        <strong>Fixed Bar</strong>
+        <p>
+          NOTE below <code>&lt;iframe&gt;</code> embeds invalid page intentionally
+          (will be blocked by <code>raw.githubusercontent.com</code>).
+          <br>
+          Just to do quick test with different origin.
+        </p>
+      </div>
+      <iframe src="https://raw.githubusercontent.com/bootleq/FocuScroll/master/public/subpages/dummy_content.html" class="mainIframe"></iframe>
+    </div>
+  </main>
+</body>
+</html>
+

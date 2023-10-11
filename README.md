@@ -62,7 +62,9 @@ Lint
 Unit tests
 
     yarn test
-    yarn test --watch
+    yarn test --debug --project firefox
+
+  Disclaimer: though most tests only involve localhost, there is one (`public/fullwith_iframe.html`) that has request to `raw.githubusercontent.com`, just to quickly simulate cross origin iframe.
 
 Package a zip file:
 

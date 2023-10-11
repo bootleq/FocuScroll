@@ -2,6 +2,8 @@ const wrap = ({
   verbose = false
 } = {}) => {
 
+  let skippedFrame = null;
+
   const log = (...args) => {
     verbose && console.log('[FocuScroll]', ...args);
   };
@@ -26,6 +28,11 @@ const wrap = ({
     }
 
     if (el.tagName === 'HTML') {
+      if (skippedFrame) {
+        log('Arrive <html> while having <iframe> skipped, can try focus the iframe.');
+        return false;
+      }
+
       log('Arrive <html>, accept it (will focus its <body>).');
       return true;
     }
@@ -43,6 +50,11 @@ const wrap = ({
     }
 
     if (!node) {
+      if (skippedFrame) {
+        log('No scrolling element detected, try to focus the skipped <iframe>.');
+        return skippedFrame;
+      }
+
       console.error('No scrolling element detected.');
     }
   };
@@ -73,6 +85,9 @@ const wrap = ({
       if (e.contentDocument) {
         e = e.contentDocument.elementFromPoint(...center);
       } else { // maybe not same origin
+        if (e.offsetWidth > center[0]) {
+          skippedFrame = e;
+        }
         e = e.parentElement;
         log('Skip iframe and pick its parent.');
       }
