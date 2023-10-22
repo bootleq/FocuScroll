@@ -27,6 +27,11 @@ const wrap = ({
       }
     }
 
+    if (el.tagName === 'FRAME' && el.clientHeight >= globalThis.innerHeight) {
+      log('Found <frame> with 100% height, accept it.');
+      return true;
+    }
+
     if (el.tagName === 'HTML') {
       if (skippedFrame) {
         log('Arrive <html> while having <iframe> skipped, can try focus the iframe.');
