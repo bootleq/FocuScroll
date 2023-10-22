@@ -85,7 +85,7 @@ const wrap = ({
       if (e.contentDocument) {
         e = e.contentDocument.elementFromPoint(...center);
       } else { // maybe not same origin
-        if (e.offsetWidth > center[0]) {
+        if (e.offsetWidth >= globalThis.innerWidth) { // only accept such full-width preview case 
           skippedFrame = e;
         }
         e = e.parentElement;

@@ -12,7 +12,7 @@ test('Frames, like javadoc', async ({ page }) => {
   await expect(page.locator('iframe.rightIframe')).toBeFocused();
 });
 
-test.only('One frame, like blogger post preview', async ({ page }) => {
+test('One frame, like blogger post preview', async ({ page }) => {
   await page.goto('./fullwidth_iframe.html'); // public/fullwith_iframe.html
 
   await expect(page.locator('body')).toBeFocused();
