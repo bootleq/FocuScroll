@@ -21,6 +21,15 @@ test('One frame, like blogger post preview', async ({ page }) => {
   await expect(page.locator('iframe.mainIframe')).toBeFocused();
 });
 
+test('Deprecated frameset page, like java 7 doc', async ({ page }) => {
+  await page.goto('./deprecated_frameset.html'); // public/deprecated_frameset.html
+
+  await expect(page.locator('frameset.mainFrameset')).toBeFocused();
+  await page.evaluate(stringifiedFocus);
+
+  await expect(page.locator('frame.mainFrame')).toBeFocused();
+});
+
 test.describe('Embed elements', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('./embed_elements.html'); // public/embed_elements.html

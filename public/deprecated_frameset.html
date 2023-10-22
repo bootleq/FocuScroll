@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Deprecated Frameset page like java 7 doc</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description=" content="FocuScroll testing for pages with frames set, like https://docs.oracle.com/javase/7/docs/api/">
+  <style>
+    body {
+      background-color:#ffffff;
+      color:#353833;
+      font-family:'DejaVu Sans', Arial, Helvetica, sans-serif;
+      font-size:14px;
+      margin:0;
+      padding:0;
+      height:100%;
+      width:100%;
+    }
+  </style>
+</head>
+<frameset cols='20%,80%' class="mainFrameset">
+  <frameset rows="30%,70%">
+    <frame src="subpages/dummy_list.html"></frame>
+    <frame src="subpages/dummy_list.html"></frame>
+  </frameset>
+  <frame src="subpages/dummy_content.html" class="mainFrame"></frame>
+</frameset>
+</html>

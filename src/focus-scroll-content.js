@@ -27,6 +27,11 @@ const wrap = ({
       }
     }
 
+    if (el.tagName === 'FRAME' && el.clientHeight >= globalThis.innerHeight) {
+      log('Found <frame> with 100% height, accept it.');
+      return true;
+    }
+
     if (el.tagName === 'HTML') {
       if (skippedFrame) {
         log('Arrive <html> while having <iframe> skipped, can try focus the iframe.');
@@ -85,7 +90,7 @@ const wrap = ({
       if (e.contentDocument) {
         e = e.contentDocument.elementFromPoint(...center);
       } else { // maybe not same origin
-        if (e.offsetWidth >= globalThis.innerWidth) { // only accept such full-width preview case 
+        if (e.offsetWidth >= globalThis.innerWidth) { // only accept such full-width preview case
           skippedFrame = e;
         }
         e = e.parentElement;
