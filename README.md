@@ -8,8 +8,8 @@ focus it to enable page scrolling with keyboard (PageDown, PageUp, .etc).
 Install
 -------
 
-- Firefox Add-ons - [addons.mozilla.org/firefox/addon/delocalizer](https://addons.mozilla.org/firefox/addon/focuscroll/)
-- Chrome Web Store - [chrome.google.com/webstore/detail/delocalizer](https://chrome.google.com/webstore/detail/focuscroll/jebflmhcpmdcelkmjkklapnebmafeelm)
+- Firefox Add-ons - [addons.mozilla.org/firefox/addon/focuscroll](https://addons.mozilla.org/firefox/addon/focuscroll/)
+- Chrome Web Store - [chrome.google.com/webstore/detail/focuscroll](https://chrome.google.com/webstore/detail/focuscroll/jebflmhcpmdcelkmjkklapnebmafeelm)
 
 
 Detail
